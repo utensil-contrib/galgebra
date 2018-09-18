@@ -16,11 +16,17 @@ except Exception as e:
     pass
 ga_namespace = 'galgebra' if noconflict else ''
 
+VERSION = '0.4.1.1'
+LONG_DESCRIPTION = """
+A symbolic geometric algebra module for python. BSD License.
+"""
+
 setup(name='galgebra',
-      version='0.4.0',
+      version=VERSION,
       description='Symbolic Geometric Algebra/Calculus modules for sympy',
       author='Alan Bromborsky',
-      author_email='abrombo@verizon.net',
+      author_email='hadfield.hugo@gmail.com',
+      url='https://github.com/hugohadfield/galgebra',
       license='BSD',
       py_modules=['ga','mv','lt','metric','printer'],
       #packages=find_packages(''),
@@ -28,7 +34,7 @@ setup(name='galgebra',
       install_requires = [
                 'sympy',
                 'numpy'],
-      #long_description=read('README'),
+      long_description=LONG_DESCRIPTION,
       classifiers=[
             'Development Status :: 4 - Beta',
             'Environment :: Console',

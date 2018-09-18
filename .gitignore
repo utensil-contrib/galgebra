@@ -23,6 +23,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+wheels/
+MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -42,7 +44,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*,cover
+*.cover
 .hypothesis/
 
 # Translations
@@ -51,6 +53,8 @@ coverage.xml
 
 # Django stuff:
 *.log
+.static_storage/
+.media/
 local_settings.py
 
 # Flask stuff:
@@ -66,7 +70,7 @@ docs/_build/
 # PyBuilder
 target/
 
-# IPython Notebook
+# Jupyter Notebook
 .ipynb_checkpoints
 
 # pyenv
@@ -75,18 +79,37 @@ target/
 # celery beat schedule file
 celerybeat-schedule
 
-# dotenv
-.env
+# Spyder project settings
+.spyderproject
+# SageMath parsed files
+*.sage.py
 
-# virtualenv
+# Environments
+.env
+.venv
+env/
 venv/
 ENV/
+env.bak/
+venv.bak/
 
 # Spyder project settings
 .spyderproject
+.spyproject
 
 # Rope project settings
 .ropeproject
 
 # Ignore all compiled python binary
 **/*.pyc
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# py.test stuff
+.pytest_cache
+
+# backup files
+**/*.bak
